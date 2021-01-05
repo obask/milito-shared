@@ -1,4 +1,4 @@
-import PhasesEnum from "../PhasesEnum";
+import PhasesEnum from "../enums/PhasesEnum";
 import PlayerInfoDTO from "./PlayerInfoDTO";
 
 export default class GameTableDTO {

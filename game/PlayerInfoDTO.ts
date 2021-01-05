@@ -1,13 +1,13 @@
 import HandDTO from "./HandDTO";
 import CardDTO from "./CardDTO";
-import FactionsEnum from "../FactionsEnum";
+import FactionsEnum from "../enums/FactionsEnum";
 
 export default class PlayerInfoDTO {
     hand: HandDTO
     playerId: number
     faction: FactionsEnum
-    row1: [CardDTO?, CardDTO?, CardDTO?, CardDTO?, CardDTO?]
-    row2: [CardDTO?, CardDTO?, CardDTO?, CardDTO?, CardDTO?]
+    row1: (CardDTO | undefined)[]
+    row2: (CardDTO | undefined)[]
 
     constructor(that: PlayerInfoDTO) {
         this.faction = that.faction
